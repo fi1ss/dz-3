@@ -1,0 +1,28 @@
+
+.light {
+  color: black;
+  background-color: blanchedalmond;  
+}
+.dark {
+  color: white;
+  background-color: #222222; 
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.light button {
+  background-color: aqua;
+}
+.light button:hover {
+  background-color: aquamarine;
+}
+.dark button {
+  background-color: darkmagenta;
+}
+.dark button:hover {
+  background-color: blueviolet;
+}
