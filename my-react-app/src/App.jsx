@@ -1,8 +1,10 @@
 import { createContext, useContext, useEffect, useState} from 'react';
 // import './App.css'
 import './Themes.css'
+import Toolbar from './Toolbar';
+import Counters from './Counters'
 
-const themeContext = createContext();
+export const themeContext = createContext();
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -21,6 +23,7 @@ function App() {
       <themeContext.Provider value = {{theme, toggleTheme}}>
         <body className={theme}>
           <Toolbar />
+          <Counters />
         </body>
         
         
@@ -29,20 +32,7 @@ function App() {
   )
 }
 
-function Toolbar() {
-  return (
-    <ThemeButton />
-  )
-}
 
-function ThemeButton() {
-  const { theme, toggleTheme } = useContext(themeContext);
-
-  return (
-    <button className={theme} onClick={toggleTheme}>Переключить тему</button>
-  )
-
-}
 
 
 
