@@ -3,6 +3,7 @@ import { createContext, useContext, useEffect, useState} from 'react';
 import './Themes.css'
 import Toolbar from './Toolbar';
 import Counters from './Counters'
+import SumRandoms from './SumRandoms';
 
 export const themeContext = createContext();
 
@@ -22,8 +23,9 @@ function App() {
   return (
       <themeContext.Provider value = {{theme, toggleTheme}}>
         <body className={theme}>
-          <Toolbar />
+          <Toolbar /> 
           <Counters />
+          <SumRandoms />
         </body>
         
         
