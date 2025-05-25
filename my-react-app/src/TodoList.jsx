@@ -38,11 +38,11 @@ function TodoList() {
                 }}>Добавить</button>
             <ul>
                 {todos.map(todo => (
-                    <li key={todo.id}>
-                        <span className={todo.completed ? 'completed' : 'non-completed'} onClick={() => dispatch({
+                    <li className='todoEl' key={todo.id} onClick={() => dispatch({
                             type: 'TOGGLE_TODO',
                             payload: {id: todo.id}
                         })}>
+                        <span className={todo.completed ? 'completed' : 'non-completed'}>
                             {todo.name}
                         </span>
                         <button onClick={() => dispatch({

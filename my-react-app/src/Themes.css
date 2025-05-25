@@ -34,7 +34,7 @@ input {
   box-sizing: border-box;
 }
 
-.light input {
+.light input, .light .todoEl{
   background-color: #ffffff;
   border-color: #e0e0e0;
   color: #333333;
@@ -45,7 +45,7 @@ input {
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
 }
 
-.dark input {
+.dark input, .dark .todoEl{
   background-color: #2d3748;
   border-color: #4a5568;
   color: #f7fafc;
@@ -67,6 +67,21 @@ input {
 }
 .dark button:hover {
   background-color: blueviolet;
+}
+
+.todoEl {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding-left: 16px;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.todoEl:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .non-completed {
