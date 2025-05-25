@@ -1,0 +1,76 @@
+body {
+    background-color: antiquewhite;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin: 4px;
+    background-color: aqua;
+}
+
+button:hover {
+  background-color: aquamarine;
+}
+
+input {
+  margin: 4px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-color: #e0e0e0;
+  color: #333333;
+}
+
+input:focus {
+  border-color: aquamarine;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+.transEl {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding-left: 16px;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.transEl button {
+    margin-right: 8px;
+}
+.income {
+    background-color: lightgreen;
+}
+.expense {
+    background-color: lightcoral;
+}
+.transEl:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+select {
+      margin: 4px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-color: #e0e0e0;
+  color: #333333;
+}
