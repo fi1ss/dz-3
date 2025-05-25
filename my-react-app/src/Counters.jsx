@@ -60,8 +60,6 @@ function CounterV2() {
     }, [])
     const items = itemsCount.map(itemCount => (<CounterElementV2 key={itemCount}/>
     ))
-    
-    
     return (
         <div>
             Значение: {count}
