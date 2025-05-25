@@ -6,6 +6,7 @@ import Counters from './Counters'
 import SumRandoms from './SumRandoms';
 import TextInput from './TextInput';
 import TodoList from './todolist';
+import ParentOfMemos from './ParentOfMemos';
 
 export const themeContext = createContext();
 
@@ -34,6 +35,7 @@ function App() {
           <SumRandoms />
           <TextInput />
           <TodoList />
+          <ParentOfMemos />
         </div>
         
         

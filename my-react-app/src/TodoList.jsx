@@ -42,9 +42,9 @@ function TodoList() {
                             type: 'TOGGLE_TODO',
                             payload: {id: todo.id}
                         })}>
-                        <span className={todo.completed ? 'completed' : 'non-completed'}>
+                        <div className={todo.completed ? 'completed' : 'non-completed'}>
                             {todo.name}
-                        </span>
+                        </div>
                         <button onClick={() => dispatch({
                             type: 'DELETE_TODO',
                             payload: {id: todo.id}

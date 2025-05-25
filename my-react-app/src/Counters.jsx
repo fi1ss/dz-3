@@ -74,12 +74,12 @@ function CounterV2() {
 }
 
 function CounterElement() {
-    console.log('Рендер!')
+    console.log('Рендер! (задание 2)')
     return <div>Элемент!</div>
 }
 
 const CounterElementV2 = memo(function CounterElementV2() {
-    console.log('Рендер!')
+    console.log('Рендер! (задание 2)')
     return <div>Элемент!</div>
 })
 
